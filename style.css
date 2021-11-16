@@ -127,3 +127,30 @@ img {
 
 /* MEDIA-QUERY TABLET */
 
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+    
+  .row{
+    width: 100%;
+    max-width: 1199px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  /* BOX STEPS */
+  #steps .row > .left, #steps .row > .central{
+    width: 50%;
+  }
+
+  #steps .row > .right{
+    width: 100%;
+  }
+
+  /* BOX WHY MI CREA PROBLEMI */
+  /* #why .row > .first, #why .row > .second{
+    width: 50%; 
+  }
+
+  #why .row > .third{
+    width: 100%;
+  } 
+}
