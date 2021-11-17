@@ -75,55 +75,44 @@ img {
 
 /* MEDIA-QUERY MOBILE */
 
-@media screen and (max-width: 576px) {
-  /* BOX LEZIONI */
-  #lezioni .row {
+@media screen and (max-width: 575px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .row{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f5eee5;
     margin-top: 0;
   }
 
+  img{
+    height: 140px;
+  }
+
+  #lezioni.container, #why.container{
+    background-color: #f5eee5; 
+  }
+
+  /* BOX LEZIONI */
   #lezioni .row > .left, #lezioni .row > .right{
     width: 100%;
-    padding: 20px 10px;   
-
+    padding: 20px 10px;
   }
-
 
   /* BOX STEPS */
-  #steps .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 0;
-  }
-
   #steps .row > .left, #steps .row > .central, #steps .row > .right{
     width: 100%;
     padding: 20px 10px;   
-
   }
 
   /* BOX WHY */
-  #why .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 0;
-    background-color: #f5eee5;
-  }
-
   #why .row > .first, #why .row > .second, #why .row > .third{
     width: 100%; 
   }
 }
-
-
 
 /* MEDIA-QUERY TABLET */
 
